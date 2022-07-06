@@ -1,16 +1,23 @@
 # flutter_platform_specific_examples
 
-A new Flutter project.
+I made this project to show how to make some platform specific integrations with basic examples and to improve my platform specific skills.
 
-## Getting Started
+## Developed platform specific examples:
+ - ✅ Battery level information
 
-This project is a starting point for a Flutter application.
+## To Do (future features)
+ ⏱ Device informations
+  - platform version
+  - imei number
+  - model name
+  - api level
+  - device name
+  - cpu type
 
-A few resources to get you started if this is your first Flutter project:
+#### Feel free to colaborate or to ask an integration example!
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🤝 Hey, feel free to text me, let's connect!
+<a href="https://www.linkedin.com/in/thierry-oliveira/"><img align="left" src="https://raw.githubusercontent.com/thierryoliveira/thierryoliveira/main/images/linkedin.svg" alt="Thierry Oliveira | LinkedIn" width="21px"/></a>  
+<br/>
+- 💬 If you have any question/feedback, please do not hesitate to reach out to me!
