@@ -7,7 +7,17 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-     
+      let controller : FlutterViewController = window?.rootView as! FlutterViewController
+      let batteryChannel = FlutterMethodChannel(name: "samples.thierryoliveira.com/battery",
+                                                binaryMessenger: controller.binaryMessenger)
+      batteryChannel.setMethodCallHandler({
+            (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
+          guard call.method == "getBatteryLevel" else {
+              result(FlutterMethodNotImplemented)
+              return
+            }
+            self?.receiveBatteryLevel(result: result)
+          })
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
