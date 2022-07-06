@@ -26,17 +26,14 @@ class _BatteryLevelPageState extends State<BatteryLevelPage> {
         title: const Text('Battery level'),
         centerTitle: true,
       ),
-      body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text(_batteryLevel ?? '')]),
+      body: Center(child: Text(_batteryLevel ?? '')),
     );
   }
 
   Future<void> _getBatteryLevel() async {
     String batteryLevel;
-
     try {
-      final result = await platform.invokeListMethod('getBatteryLevel');
+      final int result = await platform.invokeMethod('getBatteryLevel');
       batteryLevel = 'Battery level: $result%';
     } on PlatformException catch (e) {
       batteryLevel = 'Ops, something went wrong: ${e.message}';
